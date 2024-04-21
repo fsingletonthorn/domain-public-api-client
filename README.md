@@ -1,6 +1,10 @@
 # domain-public-api-client
 A client library for accessing Domain Public API generated using https://github.com/openapi-generators/openapi-python-client.
 
+This client was generated using https://developer.domain.com.au/static/latest/media/latest/openapi.json on 2024-04-21.
+
+This repo used the latest despite the versioning issues because latest incorporates both v1 and v2 api versions.
+
 ## Installation
 
 ...
