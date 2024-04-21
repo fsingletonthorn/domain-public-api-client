@@ -1,0 +1,43 @@
+from enum import Enum
+
+
+class ListingAdminV2ResidentialOffMarketPropertyPropertyTypeItem(str, Enum):
+    ACREAGESEMIRURAL = "acreageSemiRural"
+    APARTMENTUNITFLAT = "apartmentUnitFlat"
+    AQUACULTURE = "aquaculture"
+    BLOCKOFUNITS = "blockOfUnits"
+    CARSPACE = "carSpace"
+    CROPPING = "cropping"
+    DAIRYFARMING = "dairyFarming"
+    DEVELOPMENTSITE = "developmentSite"
+    DUPLEX = "duplex"
+    EQUINE = "equine"
+    FARM = "farm"
+    FARMLET = "farmlet"
+    FISHINGFORESTRY = "fishingForestry"
+    GRAZING = "grazing"
+    HORTICULTURE = "horticulture"
+    HOUSE = "house"
+    IRRIGATIONSERVICES = "irrigationServices"
+    LIVESTOCK = "livestock"
+    MIXEDFARMING = "mixedFarming"
+    NEWAPARTMENTS = "newApartments"
+    NEWHOMEDESIGNS = "newHomeDesigns"
+    NEWHOUSELAND = "newHouseLand"
+    NEWLAND = "newLand"
+    ORCHARD = "orchard"
+    PENTHOUSE = "penthouse"
+    RETIREMENT = "retirement"
+    RURAL = "rural"
+    RURALLIFESTYLE = "ruralLifestyle"
+    SEMIDETACHED = "semiDetached"
+    SPECIALISTFARM = "specialistFarm"
+    STUDIO = "studio"
+    TERRACE = "terrace"
+    TOWNHOUSE = "townhouse"
+    VACANTLAND = "vacantLand"
+    VILLA = "villa"
+    VITICULTURE = "viticulture"
+
+    def __str__(self) -> str:
+        return str(self.value)
