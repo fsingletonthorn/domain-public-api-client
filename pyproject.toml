@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "domain-public-api-client"
-version = "latest"
-description = "A client library for accessing Domain Public API"
-authors = []
+version = "v2"
+description = "A client library for accessing the Domain Public API v2"
+authors = ["Felix Singleton Thorn"]
 readme = "README.md"
 packages = [
     {include = "domain_public_api_client"},

@@ -58,12 +58,6 @@ def _parse_response(
         response_400 = PreMarketV1ProblemDetails.from_dict(response.text)
 
         return response_400
-    if response.status_code == HTTPStatus.UNAUTHORIZED:
-        response_401 = cast(Any, None)
-        return response_401
-    if response.status_code == HTTPStatus.FORBIDDEN:
-        response_403 = cast(Any, None)
-        return response_403
     if response.status_code == HTTPStatus.NOT_FOUND:
         response_404 = PreMarketV1ProblemDetails.from_dict(response.text)
 
@@ -72,6 +66,12 @@ def _parse_response(
         response_500 = PreMarketV1ProblemDetails.from_dict(response.text)
 
         return response_500
+    if response.status_code == HTTPStatus.UNAUTHORIZED:
+        response_401 = cast(Any, None)
+        return response_401
+    if response.status_code == HTTPStatus.FORBIDDEN:
+        response_403 = cast(Any, None)
+        return response_403
     if client.raise_on_unexpected_status:
         raise errors.UnexpectedStatus(response.status_code, response.content)
     else:

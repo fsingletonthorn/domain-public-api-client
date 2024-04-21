@@ -1,24 +1,22 @@
 # domain-public-api-client
 A client library for accessing Domain Public API generated using https://github.com/openapi-generators/openapi-python-client.
 
-This client was generated using https://developer.domain.com.au/static/latest/media/latest/openapi.json on 2024-04-21.
-
-This repo used the latest despite the versioning issues because latest incorporates both v1 and v2 api versions.
+This client was generated using https://developer.domain.com.au/static/latest/media/v2/openapi.json on 2024-04-21.
 
 ## Installation
 
 ...
 
 ## Usage
-First, create a client:
+<!--  First, create a client:
 
 ```python
 from domain_public_api_client import Client
 
 client = Client(base_url="https://api.example.com")
-```
+``` -->
 
-If the endpoints you're going to hit require authentication, use `AuthenticatedClient` instead:
+First, create a client using `AuthenticatedClient`:
 
 ```python
 from domain_public_api_client import AuthenticatedClient
