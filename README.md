@@ -1,7 +1,7 @@
 # domain-public-api-client
 A client library for accessing Domain Public API generated using https://github.com/openapi-generators/openapi-python-client.
 
-This client was generated using https://developer.domain.com.au/static/latest/media/v2/openapi.json on 2024-04-21.
+This client was generated using https://developer.domain.com.au/static/latest/media/lastet/openapi.json on 2024-04-21, which includes V1 and V2 of the API.
 
 ## Installation
 
@@ -115,7 +115,7 @@ client = Client(
 client.set_httpx_client(httpx.Client(base_url="https://api.example.com", proxies="http://localhost:8030"))
 ```
 
-## Building / publishing this package
+## Updating this package
 This project uses [Poetry](https://python-poetry.org/) to manage dependencies  and packaging.  Here are the basics:
 1. Update the metadata in pyproject.toml (e.g. authors, version)
 1. If you're using a private repository, configure it with Poetry
